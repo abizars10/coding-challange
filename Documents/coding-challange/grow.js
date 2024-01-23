@@ -13,6 +13,8 @@
 //   return result;
 // }
 
-const grow = (x) => x.reduce((acc, cur) => acc * cur);
+// const grow = (x) => x.reduce((acc, cur) => acc * cur);
+
+const grow = (x) => eval(x.join("*"));
 
 console.log(grow([1, 2, 3, 4, 5]));
